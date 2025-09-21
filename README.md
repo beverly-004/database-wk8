@@ -2,46 +2,25 @@
 
 clinic booking database system
 
-Entities & Relationships:
+This project is a relational database management system designed for a Clinic Booking System using MySQL.
+It models patients, doctors, departments, and appointments with proper constraints and relationships.
 
-Departments – One department can have many doctors.
+Database Schema
 
-Doctors – Each doctor belongs to one department.
+The database contains the following tables:
 
-Patients – Patients can have multiple appointments.
+Departments – stores different medical departments (e.g., Cardiology, Neurology).
 
-Appointments – Links patients and doctors; stores date and reason.
+Doctors – stores doctor information, linked to departments.
 
-Relationships:
+Patients – stores patient details.
 
-One-to-Many: Departments → Doctors
+Appointments – links patients and doctors with appointment details.
 
-One-to-Many: Doctors → Appointments
+Relationships
 
-One-to-Many: Patients → Appointments
+One Department → Many Doctors
 
+One Doctor → Many Appointments
 
-
-
-
-
-Objective:
-Design and implement a full-featured relational database using MySQL.
-
-Instructions:
-
-Choose a real-world use case (e.g., Library Management, Student Records, Clinic Booking System, Inventory Tracking, E-commerce Store, etc.).
-
-Create a relational database schema that includes:
-
-Well-structured tables.
-
-Proper constraints (PRIMARY KEY, FOREIGN KEY, NOT NULL, UNIQUE).
-
-Relationships (One-to-One, One-to-Many, Many-to-Many, where applicable).
-
-Use SQL to implement your design. 
-
-Deliverables:
-
-A single .sql file containing:
+One Patient → Many Appointments
